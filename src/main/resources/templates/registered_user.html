@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="templates/http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Info</title>
+    <script src="../js/dom_manipulation.js"></script>
+</head>
+<body>
+<h2>Last Submitted User Information</h2>
+<table>
+    <tr>
+        <td>Name :</td>
+        <td th:text="${firstName}"></td>
+    </tr>
+    <tr>
+        <td>Last Name :</td>
+        <td th:text="${lastName}"></td>
+    </tr>
+    <tr>
+        <td>Email :</td>
+        <td th:text="${email}"></td>
+    </tr>
+    <tr>
+        <td>Birthday :</td>
+        <td th:text="${birthday}"></td>
+    </tr>
+    <tr>
+        <td>Phone Number :</td>
+        <td th:text="${phoneNumber}"></td>
+    </tr>
+</table>
+<button><a href="/">Return to Home Page</a></button>
+<div id="content">
+    <button id="moreInfo" onClick="JavaScript:showMoreInfo(this)">Click to Show Additional Info</button>
+</div>
+</body>
+</html>
